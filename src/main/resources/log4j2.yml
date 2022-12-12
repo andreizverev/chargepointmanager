@@ -5,10 +5,14 @@ Configuration:
       name: STDOUT
       target: SYSTEM_OUT
       PatternLayout:
-        Pattern: "%d [%t] %m%n"
+        Pattern: "%d %level{WARN=W, DEBUG=D, ERROR=E, TRACE=T, INFO=I} [%t] %m%n"
 
   Loggers:
     Root:
-      level: debug
+      level: info
       AppenderRef:
         ref: STDOUT
+
+    Logger:
+      name: com.homecorp.chargepointmanager
+      level: debug
