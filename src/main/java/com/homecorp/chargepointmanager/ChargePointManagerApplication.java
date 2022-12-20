@@ -9,5 +9,4 @@ public class ChargePointManagerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ChargePointManagerApplication.class, args);
 	}
-
 }
